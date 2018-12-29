@@ -1,0 +1,55 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "This app will let you create, manage and check off your personal goals.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanoDW/ToDoApp.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "nanoDW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanoDW/ToDoApp/issues"
+  },
+  "homepage": "https://github.com/nanoDW/ToDoApp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "joi": "^14.3.0",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.11",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.1.10",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1"
+  }
+}

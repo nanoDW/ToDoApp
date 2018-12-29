@@ -1,0 +1,6 @@
+{
+    "name": "ToDoApp - DevMode",
+    "mail": {
+        "host": "dev-mail-server"
+    }
+}

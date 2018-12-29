@@ -1,0 +1,6 @@
+{
+    "name": "ToDoApp",
+    "mail": {
+        "host": "prod-mail-server"
+    }
+}
