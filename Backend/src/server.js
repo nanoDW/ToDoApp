@@ -1,3 +1,4 @@
+const cors = require('cors');
 const error = require('../middleware/error');
 let startupDebugger = require('debug')('app:startup');
 let auth = require('../routes/auth');
@@ -17,12 +18,14 @@ if (!config.get('jwtPrivateKey')) {
 
 console.log('Working on ' + config.get('name'));
 
+
 app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }))
 app.use(express.static('src'));
 app.use(helmet());
+app.use(cors());
 app.use('/api/users', users);
 app.use('/api/dashboard', todos);
 app.use('/api/auth', auth);

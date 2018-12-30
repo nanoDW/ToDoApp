@@ -1,0 +1,75 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "PT Sans", sans-serif
+
+//    font-family: 'Kalam', cursive
+
+aside
+    height: 45vh
+    width: 100vw
+    background-image: url("./img/notes.jpg")
+    background-repeat: no-repeat
+    background-origin: border-box
+    background-size: cover
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    .aside-desc
+        font-size: 24px
+        width: 80%
+        line-height: 30px
+        padding: 5px
+        text-align: center
+        font-family: "Kalam", cursive
+        background-color: #ffffff
+        border: 3px solid black
+        box-shadow: 5px -5px 15px 0px #000000
+
+article
+    padding: 5px
+    width: 100vw
+    margin-bottom: 10px
+
+    .form-auth
+        display: flex
+        flex-wrap: wrap
+        text-align: center
+        font-size: 14px
+
+        p
+            width: 90%
+            margin: 0 auto
+            font-size: 16px
+
+        input
+            display: inline-block
+            width: 90%
+            height: 30px
+            text-align: center
+            padding: 5px
+            margin: 5px auto
+            border: 2px solid #7E56EA
+            transition: all 0.5s ease
+
+            &:hover
+                border: 2px solid #47A2FD
+
+            &:focus
+                border: 2px solid #74F656
+
+        .button-auth
+            width: 40%
+            height: 30px
+            padding: 3px
+            margin: 5px auto
+            border: 2px solid #7E56EA
+            transition: all 0.5s ease
+            background-color: #fff
+            &:hover
+                border: 2px solid #47A2FD
+
+            &:focus
+                border: 2px solid #74F656
