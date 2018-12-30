@@ -12,8 +12,7 @@ function userLogging() {
   console.log("tu jestem");
   (async () => {
     const rawResponse = await fetch(
-      "http://localhost:1337/localhost:4500/api/auth",
-      {
+      "http://localhost:4500/api/auth", {
         method: "POST",
         headers: {
           Accept: "application/json",
