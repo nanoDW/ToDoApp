@@ -30,7 +30,7 @@ router.post("/", auth, async (req, res) => {
     res.send(todo)
 });
 
-router.get("/:nick", auth, async (req, res) => {
+router.get("/me", auth, async (req, res) => {
     const todos = await Schemas.Todo.find({
             $and: [{
                 nick: req.params.nick

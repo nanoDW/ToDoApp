@@ -1,34 +1,12 @@
-import "./style.sass";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import LoggingPanel from './App';
+import * as serviceWorker from './serviceWorker';
 
-function userLogging() {
-  const nick = document.getElementById("nick").value;
-  const password = document.getElementById("password").value;
+ReactDOM.render(<LoggingPanel />, document.getElementById('root'));
 
-  const data = {
-    nick: nick,
-    password: password
-  };
-
-  console.log("tu jestem");
-  (async () => {
-    const rawResponse = await fetch(
-      "http://localhost:4500/api/auth", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data),
-        dataType: "application/json"
-      }
-    );
-    JSON.stringify(rawResponse);
-    console.log(rawResponse);
-    const content = await JSON.stringify(rawResponse);
-    console.log(JSON.parse(content));
-  })();
-}
-
-document
-  .getElementsByClassName("button-auth")[0]
-  .addEventListener("click", userLogging);
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();

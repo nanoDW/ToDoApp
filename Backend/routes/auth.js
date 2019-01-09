@@ -30,7 +30,7 @@ router.post("/", async (req, res) => {
     const token = jwt.sign({
         _id: user._id
     }, config.get('jwtPrivateKey'));
-    res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
+    res.header('xAuthToken', token).send(_.pick(user, ['_id', 'name', 'email']));
 });
 
 function validate(req) {
