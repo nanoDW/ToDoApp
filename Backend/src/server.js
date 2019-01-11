@@ -44,7 +44,6 @@ app.use(
 );
 app.use(express.static("src"));
 app.use(helmet());
-//app.use(cors());
 app.use("/api/users", users);
 app.use("/api/dashboard", todos);
 app.use("/api/auth", auth);

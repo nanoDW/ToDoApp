@@ -6,7 +6,7 @@
 
 //    font-family: 'Kalam', cursive
 
-aside
+.aside
     height: 45vh
     width: 100vw
     background-image: url("./img/notes.jpg")
@@ -17,7 +17,7 @@ aside
     justify-content: space-around
     align-items: center
 
-    .aside-desc
+    .aside__header
         font-size: 24px
         width: 80%
         line-height: 30px
@@ -28,23 +28,24 @@ aside
         border: 3px solid black
         box-shadow: 5px -5px 15px 0px #000000
 
-article
+.article
     padding: 5px
     width: 100vw
     margin-bottom: 10px
+    font-family: "PT Sans", sans-serif
 
-    .form-auth
+    .form--auth
         display: flex
         flex-wrap: wrap
         text-align: center
         font-size: 14px
 
-        label
+        .form__label--auth
             width: 90%
             margin: 0 auto
             font-size: 16px
 
-        input
+        .form__input--auth
             display: inline-block
             width: 90%
             height: 30px
@@ -60,7 +61,7 @@ article
             &:focus
                 border: 2px solid #74F656
 
-        .button-auth
+        .form__button--auth
             width: 40%
             height: 30px
             padding: 3px
