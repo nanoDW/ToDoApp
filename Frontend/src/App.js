@@ -6,18 +6,7 @@ import MainView from './logging/panel';
 
 export default class App extends React.Component {
   state = {
-    hasToken: "",
-    token: ""
-  }
-
-  componentDidMount = async () => {
-    if (this.state.token) {
-    this.setState({ token: sessionStorage.getItem("token") });
-    this.openDashboard(this.state.token);
-    }
-    else {
-      console.log("You have no token.");
-    }
+    token: null
   }
 
   openDashboard = async (token) => {
